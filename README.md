@@ -1,4 +1,4 @@
-## GoBack Button Random Pop-up Posts For Blogger
+## Random Pop-up Posts When Goback Button Clicked (For Blogger)
 ### Setting Up Plugins
 
 This variable is maximum amount of posts to be randomized

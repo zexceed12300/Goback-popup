@@ -1,12 +1,32 @@
-## GoBack Button Random Pop-up
-### Add URL Pop-up
+## GoBack Button Random Pop-up Posts For Blogger
+### Setting Up Plugins
 
-Feel free to change or add your URL to this Array Variable
+This variable is maximum amount of posts to be randomized
 ```
-var randURL = [
-    "https://example-1.com/",
-    "https://example-2.com/",
-    "https://example-3.com/"
-];
+maxPost = 10
 ```
-Note: All URLs in the Array will appear randomly if you click the (Back) button
+Recomended change to 20 for best performance of your website
+
+Important to change "YOUR-WEBSITE.COM" to your website domain name
+```
+document.write('<script type=\"text/javascript\" src=\"https://YOUR-WEBSITE.COM/feeds/posts/default?alt=json-in-script&max-results='+getRandomInt(minPost, maxPost)+'&callback=getPostsURL\"><\/script>');
+```
+
+### Installation
+You can install this script to your blogger gadget(recomended install in the head). and done! script has been installed. 
+also you can install directly to your template blogger..
+
+find <head> tag in your template and copy/paste the script below
+```
+<head>
+    PASTE THE SCRIPT HERE!
+    
+</head>
+```
+or you can install in below <body> tag, but this not recomended
+```
+<body>
+    PASTE THE SCRIPT HERE!
+
+</body>
+```
